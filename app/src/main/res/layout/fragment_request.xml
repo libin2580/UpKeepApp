@@ -1,0 +1,73 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:orientation="vertical"
+            android:gravity="center|left"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_1sdp"
+
+            >
+            <TextView
+                android:id="@+id/texts1"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="match_parent"
+                android:text="REQUESTS"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold"
+                android:drawableRight="@drawable/downarrow111"
+                android:gravity="center|left"/>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_1sdp"
+                >
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/list_req"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorlightlightgrey"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/add_request"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textStyle="normal"
+        android:text="+ Add Request"
+        android:background="@drawable/button_style"
+        android:layout_marginLeft="@dimen/_180sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="460dp"
+        android:textSize="@dimen/_15sdp"/>
+
+</FrameLayout>

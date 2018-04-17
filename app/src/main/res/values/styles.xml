@@ -1,0 +1,74 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">#fff</item>
+        <item name="android:textSize">20sp</item>
+
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+
+        <item name="colorAccent">@color/colorgrey</item>
+        <item name="colorControlNormal">@color/colorgrey</item>
+        <item name="colorControlActivated">@color/colorred</item>
+    </style>
+
+
+    <style name="popupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/animation_on</item>
+        <item name="android:windowExitAnimation">@anim/animation_off</item>
+    </style>
+
+    <style name="TextAppearence.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorred</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="colorControlNormal">@color/colorgrey</item>
+
+        //added attributes
+        <item name="colorControlActivated">@color/colorgrey</item>
+        <item name="colorControlHighlight">@color/colorgrey</item>
+
+    </style>
+    <style name="NavigationTheme" parent="AppTheme">
+        <item name="listPreferredItemHeightSmall">60dp</item><!-- menu item height- vary as u need -->
+    </style>
+    <style name="CustomSpinnerTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/downarrow</item>
+    </style>
+
+
+
+    <style name="PopupSelectList">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/colorwhite</item>
+        <item name="android:background">@drawable/dotss</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/_45sdp</item>
+    </style>
+
+
+
+    <style name="AlertDialogCustom" parent="@android:style/Theme.Dialog">
+        <item name="android:textColor">@color/colorwhite</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:headerDividersEnabled">false</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:background">@color/colorred</item>
+    </style>
+
+
+
+
+
+
+
+</resources>

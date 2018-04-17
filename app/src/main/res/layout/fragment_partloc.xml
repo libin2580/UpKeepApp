@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragmentactivity.PartlocFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_55sdp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:text="LIST VIEW"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="normal"
+            android:background="@drawable/my_border"
+            android:textColor="@color/colorred"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:button="@android:color/transparent"
+
+          />
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:text="MAP VIEW"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="normal"
+                android:background="@drawable/my_border"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/colorred"
+                android:button="@android:color/transparent"/>
+
+        </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frme12"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment"
+     />
+
+
+    </LinearLayout>
+    </LinearLayout>
+

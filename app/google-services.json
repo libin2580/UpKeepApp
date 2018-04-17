@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "194934994129",
+    "firebase_url": "https://upkeepapp-fe243.firebaseio.com",
+    "project_id": "upkeepapp-fe243",
+    "storage_bucket": "upkeepapp-fe243.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194934994129:android:9481fbbcb68d71ec",
+        "android_client_info": {
+          "package_name": "com.upkeep.upkeep"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "194934994129-gdotcoirjscvam907qun656ujdg943df.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.upkeep.upkeep",
+            "certificate_hash": "267228db219f88a200ce54412a128aa1603b2433"
+          }
+        },
+        {
+          "client_id": "194934994129-gsc1dhu67e272j4dmhrnr3hsboia6l1i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdUATrB4JnWlG3zjx5FIBVvQYagKYpltc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "194934994129-gsc1dhu67e272j4dmhrnr3hsboia6l1i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

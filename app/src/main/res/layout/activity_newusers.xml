@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorred"
+            android:layout_width="match_parent"
+            android:layout_height="64dp">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_20sdp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorwhite"
+                    android:background="@drawable/leftarrow"
+                    android:id="@+id/toolbar_image"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Toolbar Title"
+                    android:layout_gravity="left"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/colorwhite"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:textStyle="bold"
+                    android:id="@+id/toolbar_title" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/contactsagenda"
+                        android:backgroundTint="@color/colorwhite"
+                        android:layout_marginRight="@dimen/_20sdp"/>
+                    <ImageView
+                        android:id="@+id/toolbar_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="@drawable/tick"
+                        android:backgroundTint="@color/colorwhite"
+                        android:layout_alignParentRight="true"></ImageView>
+                </LinearLayout>
+                />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/toolbar">
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/_5sdp"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/lll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_30sdp">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="New user Information"
+                            android:textStyle="normal"
+                            android:textSize="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:textColor="@color/colorblack"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:background="@color/colorwhite"
+
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/newuser_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:gravity="left|center"
+                            android:textColor="@color/colorblack"
+                            android:textStyle="normal"
+                            android:hint="What's their email?"
+                            android:inputType="textEmailAddress"
+                            android:textSize="@dimen/_12sdp"
+                            android:backgroundTint="@android:color/transparent"
+                            android:layout_marginLeft="@dimen/_15sdp"/>
+
+
+                        <EditText
+                            android:id="@+id/newuser_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:gravity="left|center"
+                            android:textColor="@color/colorblack"
+                            android:textStyle="normal"
+                            android:hint="Set a temporary password"
+                            android:inputType="textPassword"
+                            android:textSize="@dimen/_12sdp"
+                            android:backgroundTint="@android:color/transparent"
+                            android:layout_marginLeft="@dimen/_15sdp"/>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Set their access level"
+                        android:layout_gravity="left"
+                        android:textSize="@dimen/_10sdp"
+                        android:textColor="@color/colorblack"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:textStyle="normal"
+                        android:id="@+id/accesslvl" />
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_below="@id/layout1"
+                    android:background="@color/colorwhite">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Administrator"
+                                android:layout_gravity="left|center"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/colorblack"
+                                android:layout_marginLeft="@dimen/_15sdp"
+
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:textStyle="normal|bold"
+                                android:id="@+id/accesslv" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Admins are capable of editing/adding/deleting work
+orders and managing requests"
+                                android:layout_gravity="left|center"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/colorgrey"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:textStyle="normal"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:id="@+id/accessl" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Technical"
+                                android:layout_gravity="left|center"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/colorblack"
+                                android:layout_marginLeft="@dimen/_15sdp"
+
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:textStyle="normal|bold"
+                                android:id="@+id/access2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Can create and close work orders, add assets and
+locations, and may only edit and delete what they
+have created"
+                                android:layout_gravity="left|center"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/colorgrey"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:textStyle="normal"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:id="@+id/access3" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Limited Tech"
+                                android:layout_gravity="left|center"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/colorblack"
+                                android:layout_marginLeft="@dimen/_15sdp"
+
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:textStyle="normal|bold"
+                                android:id="@+id/accesss" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Limited technical users can ONLY see work orders.
+assigned to them"
+                                android:layout_gravity="left|center"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/colorgrey"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:textStyle="normal"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:id="@+id/acces" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="View Only"
+                                android:layout_gravity="left|center"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/colorblack"
+                                android:layout_marginLeft="@dimen/_15sdp"
+
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:textStyle="normal|bold"
+                                android:id="@+id/acce" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="May only view current assets and work orders.
+Cannot close or edit"
+                                android:layout_gravity="left|center"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/colorgrey"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:textStyle="normal"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:id="@+id/accesp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Requester"
+                                android:layout_gravity="left|center"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/colorblack"
+                                android:layout_marginLeft="@dimen/_15sdp"
+
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:textStyle="normal|bold"
+                                android:id="@+id/acced" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="May only request work orders. Cannot see any of the
+company's information"
+                                android:layout_gravity="left|center"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/colorgrey"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:textStyle="normal"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:id="@+id/arrr" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Vendors/Third Party"
+                                android:layout_gravity="left|center"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/colorblack"
+                                android:layout_marginLeft="@dimen/_15sdp"
+
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:textStyle="normal|bold"
+                                android:id="@+id/accedd" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Vendors or Third Party users do not have any login
+credentials. They are only internal assignment."
+                                android:layout_gravity="left|center"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/colorgrey"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:textStyle="normal"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:id="@+id/arrrd" />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_80sdp"
+    android:gravity="center"
+    android:layout_gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New user will receive an email and will be able to
+login to their account immediately"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/colorgrey"
+
+                    android:gravity="center"
+                    android:id="@+id/toolbar_tit" />
+
+</LinearLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="@dimen/_20sdp">
+
+
+                            <LinearLayout
+                                android:id="@+id/submit_new_user"
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:orientation="vertical"
+                                android:gravity="left|center"
+                                >
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:textColor="@color/colorwhite"
+                                    android:textStyle="normal"
+                                    android:text="ADD NEW USER"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:maxLength="2000"
+                                    android:lines="20"
+                                    android:minLines="5"
+                                    android:background="@color/colorblack"
+                                    android:gravity="center"
+                                    android:layout_marginRight="@dimen/_15sdp"
+                                    android:layout_marginLeft="@dimen/_15sdp"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
+

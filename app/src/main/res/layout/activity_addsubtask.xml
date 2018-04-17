@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorred"
+            android:layout_width="match_parent"
+            android:layout_height="64dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_20sdp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorwhite"
+                    android:background="@drawable/leftarrow"
+                    android:id="@+id/toolbar_image" />
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Toolbar Title"
+                    android:layout_gravity="left"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/colorwhite"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:textStyle="bold"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorwhite"
+                        android:text="DONE"
+                        android:layout_marginRight="@dimen/_20sdp"/>
+
+                </LinearLayout>
+                />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/toolbar">
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/_5sdp"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/lll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:background="@color/colorwhite"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:textColor="@color/colorblack"
+                                android:textStyle="normal"
+                                android:hint="Enter Form Question"
+                                android:textSize="@dimen/_12sdp"
+                                android:backgroundTint="@android:color/transparent"
+                           />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_below="@id/layout1"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorwhite"
+                                android:layout_marginBottom="@dimen/_1sdp">
+                            <TextView
+                                android:id="@+id/my_textnew"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dip"
+                                android:clickable="true"
+                                android:checked="true"
+                                android:gravity="left|center"
+                                android:padding="@dimen/_10sdp"
+                                android:textColor="@color/colorblack"
+                                android:text="Select Form Type" />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorwhite"
+                                android:layout_marginBottom="@dimen/_1sdp">
+                            <CheckedTextView
+                                android:id="@+id/my_checkedtextview"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dip"
+                                android:clickable="true"
+                                android:checked="true"
+                                android:padding="@dimen/_10sdp"
+                                android:textColor="@color/colorblack"
+                                android:drawableTint="@color/colorred"
+                                android:gravity="center"
+                                android:text="Task" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorwhite"
+                                android:layout_marginBottom="@dimen/_1sdp">
+                            <CheckedTextView
+                                android:id="@+id/my_checkedtextview1"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dip"
+                                android:clickable="true"
+                                android:checked="true"
+                                android:textColor="@color/colorblack"
+                                android:gravity="center"
+                                android:padding="@dimen/_10sdp"
+                                android:drawableTint="@color/colorred"
+                                android:text="Text Input Form" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorwhite"
+                                android:layout_marginBottom="@dimen/_1sdp">
+                            <CheckedTextView
+                                android:id="@+id/my_checkedtextview2"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dip"
+                                android:clickable="true"
+                                android:checked="true"
+                                android:textColor="@color/colorblack"
+                                android:drawableTint="@color/colorred"
+                                android:gravity="center"
+                                android:padding="@dimen/_10sdp"
+                                android:text="Number Input Form" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorwhite"
+                                android:layout_marginBottom="@dimen/_1sdp">
+                            <CheckedTextView
+                                android:id="@+id/my_checkedtextview3"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dip"
+                                android:clickable="true"
+                                android:checked="true"
+                                android:textColor="@color/colorblack"
+                                android:drawableTint="@color/colorred"
+                                android:gravity="center"
+                                android:padding="@dimen/_10sdp"
+                                android:text="Checklist Input Form" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorwhite"
+                                android:layout_marginBottom="@dimen/_1sdp">
+                            <CheckedTextView
+                                android:id="@+id/my_checkedtextview4"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dip"
+                                android:clickable="true"
+                                android:checked="true"
+                                android:textColor="@color/colorblack"
+                                android:drawableTint="@color/colorred"
+                                android:gravity="center"
+                                android:padding="@dimen/_10sdp"
+                                android:text="Multiple Choice Input Form" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="OPTIONAL"
+                    android:layout_gravity="left"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/caldroid_black"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:textStyle="normal"
+                    android:id="@+id/textnew" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_30sdp"
+                    android:layout_below="@id/layout1"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                  >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dip"
+                            android:orientation="vertical"
+                            android:gravity="left|center"
+                            android:background="@color/colorwhite"
+                            android:layout_marginBottom="@dimen/_1sdp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:textColor="@color/colorgrey"
+                                android:textStyle="normal"
+                                android:text="Assign Worker"
+                                android:textSize="@dimen/_12sdp"
+                                android:maxLength="2000"
+                                android:lines="20"
+                                android:minLines="5"
+                                android:gravity="left|center"
+                                android:drawableRight="@drawable/rightarrow"
+                                android:scrollHorizontally="false"
+                                android:scrollbars="vertical"
+                                android:inputType="textMultiLine"
+                                android:drawablePadding="@dimen/_10sdp"
+                                android:drawableTint="@color/colorblack"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:layout_marginLeft="@dimen/_15sdp"/>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dip"
+                            android:orientation="vertical"
+                            android:gravity="left|center"
+                            android:background="@color/colorwhite"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:textColor="@color/colorgrey"
+                                android:textStyle="normal"
+                                android:text="Assign Asset"
+                                android:textSize="@dimen/_12sdp"
+                                android:maxLength="2000"
+                                android:lines="20"
+                                android:minLines="5"
+                                android:gravity="left|center"
+                                android:drawableRight="@drawable/rightarrow"
+                                android:scrollHorizontally="false"
+                                android:scrollbars="vertical"
+                                android:inputType="textMultiLine"
+                                android:drawablePadding="@dimen/_10sdp"
+                                android:drawableTint="@color/colorblack"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:backgroundTint="@android:color/transparent"
+                                android:layout_marginLeft="@dimen/_15sdp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
+

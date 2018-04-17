@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorred"
+            android:layout_width="match_parent"
+            android:layout_height="64dp">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_20sdp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorwhite"
+                    android:background="@drawable/leftarrow"
+                    android:id="@+id/toolbar_image"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Toolbar Title"
+                    android:layout_gravity="left|center"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/colorwhite"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:textStyle="bold"
+                    android:id="@+id/toolbar_title" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:gravity="right">
+                    <TextView
+                        android:id="@+id/toolbar_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="SAVE"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/colorwhite"
+                        android:textStyle="normal"
+
+                        android:layout_alignParentRight="true"></TextView>
+                </LinearLayout>
+                />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:id="@+id/lvCheckBox"
+        android:fadingEdge="none"
+        android:cacheColorHint="@null"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@color/colorwhite">
+    </ListView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Add Category"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorred"
+            android:layout_width="match_parent"
+            android:layout_height="64dp">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_20sdp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorwhite"
+                    android:background="@drawable/leftarrow"
+                    android:id="@+id/toolbar_image"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Toolbar Title"
+                    android:layout_gravity="left|center"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/colorwhite"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:textStyle="bold"
+                    android:id="@+id/toolbar_title" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:gravity="right">
+                    <TextView
+                        android:id="@+id/toolbar_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/colorwhite"
+                        android:textStyle="normal"
+
+                        android:layout_alignParentRight="true"></TextView>
+                </LinearLayout>
+                />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearnew"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/toolbar"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            tools:context="boommba.apps.prototype.draggablemapviewandroid.MapsActivity" />
+        <TextView
+            android:id="@+id/dragg_result"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff"
+            android:gravity="center_horizontal"
+            android:padding="2dp"
+            android:text="Please drag map to your address.."
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+
+
+        <LinearLayout
+            android:id="@+id/linearnew1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_below="@id/linearnew"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorred"
+                    android:text="ADD LOCATION"
+                    android:gravity="center"
+                    android:textColor="@color/colorwhite"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15sdp"
+                    />
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorwhite">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorred"
+            android:layout_width="match_parent"
+            android:layout_height="64dp">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorwhite"
+                    android:background="@drawable/leftarrow"
+                    android:id="@+id/toolbar_image"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="About"
+                    android:layout_gravity="left"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/colorwhite"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:textStyle="bold"
+                    android:id="@+id/toolbar_title" />
+                />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/toolbar">
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/_5sdp"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/lll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        >
+                        <LinearLayout
+                            android:layout_width="@dimen/_200sdp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/ivImage"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:src="@drawable/splash_icon"
+                                android:layout_marginLeft="@dimen/_35sdp"
+
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=" UpKeep"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_25sdp"
+                                android:textColor="@color/colorred"
+                                android:gravity="left"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="v2.6.9"
+                            android:textStyle="normal"
+                            android:textSize="@dimen/_14sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+
+                            android:textColor="@color/colorblack"
+                            android:gravity="center"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Email: info@onupkeep.com"
+                            android:textStyle="normal"
+                            android:textSize="@dimen/_12sdp"
+                            android:textColor="@color/colorPrimary"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="www.onupkeep.com"
+                            android:textStyle="normal"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:textSize="@dimen/_12sdp"
+                            android:textColor="@color/colorPrimary"
+                            android:gravity="center"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:layout_below="@id/layout1"
+                    android:layout_marginTop="@dimen/_15sdp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+
+
+                            <TextView
+                                android:id="@+id/asset_namee"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorblack"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_marginBottom="@dimen/_15sdp"
+                                android:textStyle="normal"
+                                android:text="UpKeep was started in 2015 by Ryan Chan while working as a process-development engineer at a membrane manufacturing plant for wastewater and saltwater purification. One of the biggest problems at their facility was that recording work done in the plant was an extremely cumbersome process for the facilities and maintenance department to manage."
+                                android:textSize="@dimen/_12sdp" />
+
+
+                        <TextView
+                            android:id="@+id/abt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorblack"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:textStyle="normal"
+                          android:text="Regardless of whether it was a broken piece of equipment on the manufacturing line, a busted door lock, or a simple filter replacement, maintenance work orders would create stacks of papers that were easily lost. The team have to move back and forth from the production facility to the office, only to retype their notes back into a desktop application. With modern cloud and smartphone technology, there had to be a better way. So, Ryan set out on a mission of improving the productivity of maintenance teams."
+                              android:textSize="@dimen/_12sdp" />
+                        <TextView
+                            android:id="@+id/abtk"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorblack"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:textStyle="normal"
+                           android:text="UpKeep is a mobile-first solution for maintenance management that technicians love to use. It allows workers to snap a picture of a broken piece of equipment, create a work order, and send it off to the maintenance department for repair–all from their mobile device. Already, we have 40,000 users, who have realized the power of what we are building."
+                            android:textSize="@dimen/_12sdp" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,436 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/_5sdp"
+
+        >
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+              >
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="vertical"
+
+
+
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        >
+                        <TextView
+                            android:id="@+id/text3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:textSize="@dimen/_14sdp"
+                            android:textColor="@color/colorgrey"
+                            android:gravity="center"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_marginRight="@dimen/_20sdp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".4"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:gravity="center"
+                        >
+                        <View
+                            android:background="@color/colorgrey"
+                            android:layout_height="1dp"
+                            android:layout_width="@dimen/_80sdp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="7"
+                        android:id="@+id/first_horizontal_box1"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="@dimen/_1sdp"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/first_box_my_documents1"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+
+                            android:gravity="center"
+                            >
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minWidth="@dimen/_50sdp"
+                                android:minHeight="@dimen/_50sdp"
+                                android:src="@drawable/officeblock"
+
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:id="@+id/img_my_documents1"
+                                />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_30sdp"
+                                android:text="Facility/Building"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:gravity="center"
+                                />
+
+                        </LinearLayout>
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/second_box_my_meetings1"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minWidth="@dimen/_50sdp"
+                                android:minHeight="@dimen/_50sdp"
+                                android:src="@drawable/house"
+                                android:id="@+id/img_my_meetings1"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_30sdp"
+                                android:text="Property Management"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:gravity="center"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="7"
+                        android:id="@+id/first_horizontal_box2"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_10sdp"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/first_box_my_documents2"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+
+                            android:gravity="center"
+                            >
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minWidth="@dimen/_50sdp"
+                                android:minHeight="@dimen/_50sdp"
+                                android:src="@drawable/conveyor"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:id="@+id/img_my_documents2"
+                                />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_30sdp"
+                                android:text="Manufacturing"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:gravity="center"
+                                />
+
+                        </LinearLayout>
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/second_box_my_meetings2"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minWidth="@dimen/_50sdp"
+                                android:minHeight="@dimen/_50sdp"
+                                android:src="@drawable/van"
+                                android:id="@+id/img_my_meetings2"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_30sdp"
+                                android:text="Fleet"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:gravity="center"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="7"
+                        android:id="@+id/first_horizontal_box3"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_20sdp"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/first_box_my_documents3"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+
+                            android:gravity="center"
+                            >
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minWidth="@dimen/_50sdp"
+                                android:minHeight="@dimen/_50sdp"
+                                android:src="@drawable/church"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:id="@+id/img_my_documents3"
+                                />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_30sdp"
+                                android:text="Church"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:gravity="center"
+                                />
+
+                        </LinearLayout>
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/second_box_my_meetings3"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minWidth="@dimen/_50sdp"
+                                android:minHeight="@dimen/_50sdp"
+                                android:src="@drawable/classroom"
+                                android:id="@+id/img_my_meetings3"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_30sdp"
+                                android:text="School"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:gravity="center"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="8"
+                        android:id="@+id/first_horizontal_box"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_20sdp"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/first_box_my_documents"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+
+                            android:gravity="center"
+                            >
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minWidth="@dimen/_50sdp"
+                                android:minHeight="@dimen/_50sdp"
+                                android:src="@drawable/shop"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:id="@+id/img_my_documents"
+                                />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_30sdp"
+                                android:text="Small/Medium Buisiness"
+
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:gravity="center"
+                                />
+
+                        </LinearLayout>
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/second_box_my_meetings"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minWidth="@dimen/_50sdp"
+                                android:minHeight="@dimen/_50sdp"
+                                android:src="@drawable/wrench"
+                                android:id="@+id/img_my_meetings"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_30sdp"
+                                android:text="Other/General Maintenance"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:gravity="center"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="@dimen/_1sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:gravity="center"
+                            android:text="SKIP"
+                            android:layout_height="wrap_content"
+                            android:layout_width="fill_parent"
+                            android:textSize="@dimen/_15sdp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+
+

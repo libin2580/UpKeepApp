@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorred"
+            android:layout_width="match_parent"
+            android:layout_height="64dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_20sdp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorwhite"
+                    android:background="@drawable/leftarrow"
+                    android:id="@+id/toolbar_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Toolbar Title"
+                    android:layout_gravity="left"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/colorwhite"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:textStyle="bold"
+                    android:id="@+id/toolbar_title" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/qrscaner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/barcode"
+                        android:backgroundTint="@color/colorwhite"
+                        android:onClick="QrScanner"
+                        android:layout_marginRight="@dimen/_20sdp"/>
+                    <ImageView
+                        android:id="@+id/toolbar_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="@drawable/tick"
+                        android:backgroundTint="@color/colorwhite"
+                        android:layout_alignParentRight="true"></ImageView>
+                </LinearLayout>
+                />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/toolbar">
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/_5sdp"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/lll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_200sdp"
+
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+                        <LinearLayout
+                            android:id="@+id/imageclick"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/ivImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/photocamera"
+                                android:layout_marginTop="@dimen/_30sdp"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Take a picture"
+                                android:textStyle="normal"
+                                android:textColor="@color/colorblack"
+                                android:gravity="center"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom|left">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Part Info"
+                            android:textStyle="normal"
+                            android:textSize="@dimen/_12sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:textColor="@color/colorblack"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_below="@id/layout1"
+                    android:background="@color/colorwhite">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:orientation="vertical"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            >
+                            <EditText
+                                android:id="@+id/pname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorblack"
+                                android:textStyle="normal"
+                                android:hint="Part Name"
+                                android:textSize="@dimen/_12sdp"
+                                android:backgroundTint="@android:color/transparent"
+                                android:layout_marginLeft="@dimen/_15sdp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            >
+                            <EditText
+                                android:id="@+id/pdesc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorblack"
+                                android:textStyle="normal"
+                                android:hint="Part Description"
+                                android:textSize="@dimen/_12sdp"
+                                android:backgroundTint="@android:color/transparent"
+                                android:layout_marginLeft="@dimen/_15sdp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            >
+                            <EditText
+                                android:id="@+id/pucost"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorblack"
+                                android:textStyle="normal"
+                                android:hint="Unit Cost"
+                                android:textSize="@dimen/_12sdp"
+                                android:inputType="number"
+                                android:backgroundTint="@android:color/transparent"
+                                android:layout_marginLeft="@dimen/_15sdp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            >
+                            <EditText
+                                android:id="@+id/pqntity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorblack"
+                                android:textStyle="normal"
+                                android:hint="Quantity"
+                                android:textSize="@dimen/_12sdp"
+                                android:inputType="number"
+                                android:backgroundTint="@android:color/transparent"
+                                android:layout_marginLeft="@dimen/_15sdp"/>
+                        </LinearLayout>
+                        <LinearLayout
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            >
+                            <EditText
+                                android:id="@+id/pbarcode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorblack"
+                                android:textStyle="normal"
+                                android:hint="Barcode"
+                                android:textSize="@dimen/_12sdp"
+                                android:backgroundTint="@android:color/transparent"
+                                android:layout_marginLeft="@dimen/_15sdp"/>
+                        </LinearLayout>
+                        <LinearLayout
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            >
+                            <EditText
+                                android:id="@+id/pminqntity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorblack"
+                                android:textStyle="normal"
+                                android:hint="Minimum Quantity"
+                                android:textSize="@dimen/_12sdp"
+                                android:inputType="number"
+                                android:backgroundTint="@android:color/transparent"
+                                android:layout_marginLeft="@dimen/_15sdp"/>
+                        </LinearLayout>
+                        <LinearLayout
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            >
+                            <EditText
+                                android:id="@+id/parea"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorblack"
+                                android:textStyle="normal"
+                                android:hint="Area"
+                                android:textSize="@dimen/_12sdp"
+                                android:backgroundTint="@android:color/transparent"
+                                android:layout_marginLeft="@dimen/_15sdp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Additional Part Details"
+                    android:layout_gravity="left"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/colorblack"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:textStyle="normal"
+                    android:id="@+id/toolbar_tit" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_below="@id/layout1"
+                    android:background="@color/colorwhite">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:orientation="vertical"
+                            >
+                            <EditText
+                                android:id="@+id/pinfo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorblack"
+                                android:textStyle="normal"
+                                android:hint="Type info here..."
+                                android:textSize="@dimen/_12sdp"
+                                android:maxLength="2000"
+                                android:lines="20"
+                                android:minLines="5"
+                                android:scrollHorizontally="false"
+                                android:scrollbars="vertical"
+                                android:inputType="textMultiLine"
+                                android:backgroundTint="@android:color/transparent"
+                                android:layout_marginLeft="@dimen/_15sdp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Assign to a Location"
+                    android:layout_gravity="left"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/colorblack"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:textStyle="normal"
+                    android:id="@+id/textnew" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_30sdp"
+                    android:layout_below="@id/layout1"
+                    android:background="@color/colorwhite">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+
+                            android:id="@+id/select_loc"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:orientation="vertical"
+                            android:gravity="left|center"
+                            >
+                            <TextView
+                                android:id="@+id/ploc"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:textColor="@color/colorblack"
+                                android:textStyle="normal"
+                                android:text="No Location Selected"
+                                android:textSize="@dimen/_12sdp"
+                                android:maxLength="2000"
+                                android:lines="20"
+                                android:minLines="5"
+                                android:gravity="left|center"
+                                android:drawableRight="@drawable/rightarrow"
+                                android:scrollHorizontally="false"
+                                android:scrollbars="vertical"
+                                android:inputType="textMultiLine"
+                                android:drawableLeft="@drawable/locationonmap"
+                                android:drawablePadding="@dimen/_10sdp"
+                                android:drawableTint="@color/colorblack"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:backgroundTint="@android:color/transparent"
+                                android:layout_marginLeft="@dimen/_15sdp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
+
