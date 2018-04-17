@@ -12,12 +12,16 @@ import com.upkeep.upkeep.R;
 import org.greenrobot.eventbus.Subscribe;
 
 public class MainActivity extends AppCompatActivity {
- 
+
+    String s="Rincy";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main1);
- 
+
+
+
         addFragment();
     }
  
